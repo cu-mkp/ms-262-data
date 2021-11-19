@@ -1,0 +1,696 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar ns="" xmlns="http://relaxng.org/ns/structure/1.0"
+  datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
+  xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
+  xmlns:s="http://www.ascc.net/xml/schematron">
+  <start>
+    <element name="root">
+      <a:documentation>Root element for transcription of folio</a:documentation>
+      <attribute name="page">
+        <data type="NMTOKEN"/>
+      </attribute>
+      <attribute name="image">
+        <data type="anyURI"/>
+      </attribute>
+      <optional>
+        <attribute name="layout">
+        <choice>
+          <value>three-column</value>
+          <value>four-column</value>
+        </choice>
+      </attribute>
+      </optional>
+      <mixed>
+        <oneOrMore>
+          <choice>
+            <!--          <text/> -->
+            <ref name="e.ab"/>
+            <ref name="e.figure"/>
+            <ref name="e.mark"/>
+            <ref name="e.div"/>
+            <ref name="e.hr"/>
+          </choice>
+        </oneOrMore>
+      </mixed>
+    </element>
+  </start>
+
+  <!--                   -->
+  <!-- BLOCK ELEMENTS    -->
+  <!--                   -->
+
+
+  <!-- ab -->
+  <define name="e.ab">
+    <a:documentation>Anonymous Block: a generic block of text</a:documentation>
+    <element name="ab">
+      <optional>
+        <ref name="a.continued"/>
+      </optional>
+      <optional>
+        <ref name="a.continues"/>
+      </optional>
+      <optional>
+        <ref name="a.margin"/>
+      </optional>
+      <optional>
+        <ref name="a.render"/>
+      </optional>
+      <optional>
+        <ref name="a.cancelled"/>
+      </optional>
+      <optional>
+        <ref name="a.hand"/>
+      </optional>
+      <ref name="m.phrase"/>
+    </element>
+  </define>
+
+
+  <!-- div -->
+  <define name="e.div">
+    <a:documentation>Text Division: A group of one or more document objects forming a primary textual component; e.g., an "entry" or "recipe"</a:documentation>
+    <element name="div">
+      <s:pattern name="div-id">
+      <s:rule context="div">
+        <s:assert test="@id"> 
+         Warning: div without an id attribute</s:assert>
+      </s:rule>
+      </s:pattern>
+      <optional>
+        <ref name="a.continued"/>
+      </optional>
+      <optional>
+        <ref name="a.continues"/>
+      </optional>
+      <optional>
+      <ref name="a.id"/>
+      </optional>
+      <optional>
+        <ref name="a.margin"/>
+      </optional>
+      <optional>
+        <ref name="a.categories"/>
+      </optional>
+      <optional>
+        <ref name="a.part"/>
+      </optional>
+      <optional>
+        <ref name="e.head"/>
+      </optional>
+      <oneOrMore>
+        <choice>
+          <text/>
+          <ref name="e.ab"/>
+          <ref name="e.figure"/>
+          <ref name="m.phrase"/>
+        </choice>
+      </oneOrMore>
+    </element>
+  </define>
+
+  <!-- figure -->
+  <define name="e.figure">
+    <a:documentation>Figure: a graphical object in the source document</a:documentation>
+    <element name="figure">
+      <optional>
+        <ref name="a.id"/>
+      </optional>
+      <optional>
+        <ref name="a.margin"/>
+      </optional>
+      <optional>
+        <ref name="a.render"/>
+      </optional>
+      <optional>
+      <ref name="a.size"/>
+      </optional>
+      <optional>
+        <ref name="a.alt-text"/>
+      </optional>
+      <optional>
+        <ref name="a.link"/>
+      </optional>
+      <oneOrMore>
+        <choice>
+          <ref name="m.phrase"/>
+          <element name="caption">
+            <oneOrMore>
+              <choice>
+                <text/>
+                <ref name="m.phrase"/>
+              </choice>
+            </oneOrMore>
+          </element>
+        </choice>
+      </oneOrMore>
+    </element>
+  </define>
+
+<!-- mark -->
+
+<define name="e.mark">
+  <a:documentation>Mark: a symbol in the source text represented in the transcription by a utf-8 character</a:documentation>
+  <element name="mark">
+    <data type="string"/>
+  </element>
+</define>
+
+  <!-- head -->
+  <define name="e.head">
+    <a:documentation>Heading: a block of text at the beginning of a textual division functioning as the heading or title of that division. TEI Element</a:documentation>
+    <element name="head">
+      <optional>
+        <ref name="a.margin"/>
+      </optional>
+      <ref name="m.phrase"/>
+    </element>
+  </define>
+  
+  <define name="e.hr">
+    <a:documentation>Horizontal rule</a:documentation>
+    <element name="hr">
+      <empty/>
+    </element>
+  </define>
+
+  <!--                           -->
+  <!-- TRANSCRIPTION ELEMENTS    -->
+  <!--                           -->
+
+  <define name="e.add">
+    <a:documentation>Addition: Text added to the document by author, scribe, but *not* by the editor or transcriber</a:documentation>
+    <element name="add">
+      <ref name="m.phrase"/>
+    </element>
+  </define>
+
+  <!-- corr -->
+  <define name="e.corr">
+    <a:documentation>Correction: A revision introduced into the transcription by the editor or transcriber</a:documentation>
+    <element name="corr">
+      <ref name="m.phrase"/>
+    </element>
+  </define>
+
+  <!-- del -->
+  <define name="e.del">
+    <a:documentation>Deletion: Content deleted in the document by author, scribe, but *not* by the editor or transcriber</a:documentation>
+    <element name="del">
+      <ref name="m.phrase"/>
+    </element>
+  </define>
+
+<!-- exp -->
+  
+  <define name="e.exp">
+    <a:documentation>Expansion: text added by the editor or transcriber expanding an abbreviation in the source</a:documentation>
+    <element name="exp">
+      <ref name="m.phrase"/>
+    </element>
+  </define>
+
+  <!-- gap -->
+  <a:documentation>Gap: Text added to the document by author, scribe, but *not* by the editor or transcriber</a:documentation>
+  <define name="e.gap">
+    <element name="gap">
+      <empty/>
+    </element>
+  </define>
+
+<!-- ill -->
+  
+  <define name="e.ill">
+    <a:documentation>Illegible: unreadable text in the source document</a:documentation>
+    <element name="ill">
+      <ref name="m.phrase"/>
+    </element>
+  </define>
+
+
+  <!-- lb -->
+  <define name="e.lb">
+    <a:documentation>Line Break: An empty element indicating end of a line of text in the source document</a:documentation>
+    <element name="lb">
+      <empty/>
+    </element>
+  </define>
+
+  <!-- sup -->
+  <define name="e.sup">
+    <a:documentation>Supplied Text: Text added by the transcriber/editor.</a:documentation>
+    <element name="sup">
+      <ref name="m.phrase"/>
+    </element>
+  </define>
+
+
+  <!-- underline -->
+  <define name="e.underline">
+    <a:documentation>Underlined: underlined text</a:documentation>
+    <element name="underline">
+      <ref name="m.phrase"/>
+    </element>
+  </define>
+  
+  <!-- emph -->
+  <define name="e.emph">
+    <a:documentation>Emph: emphasized text</a:documentation>
+    <element name="emph">
+      <ref name="m.phrase"/>
+    </element>
+  </define>
+  
+  <!-- superscript -->
+  <define name="e.superscript">
+    <a:documentation>superscript: superscript text</a:documentation>
+    <element name="superscript">
+      <ref name="m.phrase"/>
+    </element>
+  </define>
+  
+
+  <!-- ups -->  
+  <define name="e.ups">
+    <a:documentation>ups: text under paper strip</a:documentation>
+    <element name="ups">
+      <ref name="m.phrase"/>
+    </element>
+  </define>
+  
+  <!--                           -->
+  <!--  ATTRIBUTES               -->
+  <!--                           -->
+
+  <!-- id -->
+  <define name="a.id">
+    <a:documentation>Identifier: A unique identifier for its parent element </a:documentation>
+    <attribute name="id">
+      <data type="NMTOKEN"/>
+    </attribute>
+  </define>
+
+  <!-- margin -->
+  <define name="a.margin">
+    <a:documentation>Margin (position): the location in the margin at which the parent element appears in the source document. Valid values are: "right-top", "right-middle", "right-bottom", "left-top", "left-middle", "left-bottom", "top", "bottom", and "full"</a:documentation>
+    <attribute name="margin">
+      <optional>
+        <choice>
+          <value>left-top</value>
+          <value>left-middle</value>
+          <value>left-bottom</value>
+          <value>right-top</value>
+          <value>right-middle</value>
+          <value>right-bottom</value>
+          <value>top</value>
+          <value>bottom</value>
+          <value>full</value>
+        </choice>
+      </optional>
+    </attribute>
+  </define>
+
+  <!-- render -->
+  <define name="a.render">
+    <a:documentation>Margin rendition: Instructions to cue the proper rendition of the height and width  a margin block. Valid values are: "tall", "wide", and "full"</a:documentation>
+    <attribute name="render">
+      <optional>
+        <choice>
+          <value>tall</value>
+          <value>wide</value>
+          <value>full</value>
+        </choice>
+      </optional>
+    </attribute>
+  </define>
+  
+  <!-- size -->
+  <define name="a.size">
+    <a:documentation>Image size: Instructions to cue the proper rendition of the size of an image. Valid values are: "x-small", "small", "medium", and "large"</a:documentation>
+    <attribute name="size">
+      <optional>
+        <choice>
+          <value>x-small</value>
+          <value>small</value>
+          <value>medium</value>
+          <value>large</value>
+        </choice>
+      </optional>
+    </attribute>
+  </define>
+  
+<!-- alt-text -->
+  <define name="a.alt-text">
+    <a:documentation>Alt-text: a textual description of a figure; analogous to HTML alt attribute</a:documentation>
+      <attribute name="alt-text">
+        <text/>
+      </attribute>
+
+  </define>
+  
+  <!-- link -->
+  <define name="a.link">
+    <a:documentation>Link: the url of a linked image for a figure</a:documentation>
+    <attribute name="link">
+      <data type="anyURI"/>
+    </attribute>
+  </define>
+  
+  
+
+  <!-- continues -->
+  <define name="a.continues">
+    <a:documentation>cont (continues): An attribute indicating the parent block continues from another page </a:documentation>
+    <attribute name="continues">
+      <value>yes</value>
+    </attribute>
+  </define>
+  
+  <!-- continued -->
+  <define name="a.continued">
+    <a:documentation>cont (continued): An attribute indicating that the parent block is continued on another page</a:documentation>
+    <attribute name="continued">
+      <value>yes</value>
+    </attribute>
+  </define>
+  
+  <!-- categories -->
+  <define name="a.categories">
+    <a:documentation>Categories: A semi-colon delimited list of controlled terms assigned by the project to a text division</a:documentation>
+    <attribute name="categories">
+      <data type="token"/>
+    </attribute>
+  </define>
+  
+  <!-- part -->
+  <define name="a.part">
+    <a:documentation>Part: Indicates that a div is a part of the same text division which shares the same id on the same folio page. Values are "y" and "n".</a:documentation>
+    <attribute name="part">
+      <choice>
+        <value>y</value>
+        <value>n</value>
+      </choice>
+    </attribute>
+  </define>
+  
+  <!-- cancelled -->
+  <define name="a.cancelled">
+    <a:documentation>Cancelled: Indicates that an ab has been stricken out (or cancelled) in the original. Values are "y" and "n".</a:documentation>
+    <attribute name="cancelled">
+      <choice>
+        <value>y</value>
+        <value>n</value>
+      </choice>
+    </attribute>
+  </define>
+  
+  <!-- hand -->
+  <define name="a.hand">
+    <a:documentation>Hand: Indicates that an ab has been written by a hand other than the main hand of the author-practitioner, hand a. Valid values are: "handa'", "handb", "handc", "handd", and "hande"</a:documentation>
+    <attribute name="hand">
+      <optional>
+        <choice>
+          <value>handa'</value>
+          <value>handb</value>
+          <value>handc</value>
+          <value>handd</value>
+          <value>hande</value>
+        </choice>
+      </optional>
+    </attribute>
+  </define>
+  
+
+  <!--                            -->
+  <!--  LANGUAGE ELEMENTS         -->
+  <!--                            -->
+  
+  <!-- de -->
+  <define name="e.de">
+    <a:documentation>German: German text</a:documentation>
+    <element name="de">
+      <ref name="m.phrase"/>
+    </element>
+  </define>
+
+  <!-- el -->
+  <define name="e.el">
+    <a:documentation>Greek: Greek text</a:documentation>
+    <element name="el">
+      <ref name="m.phrase"/>
+    </element>
+  </define>
+  
+  <!-- es -->
+  <define name="e.es">
+    <a:documentation>Spanish: Spanish text</a:documentation>
+    <element name="es">
+      <ref name="m.phrase"/>
+    </element>
+  </define>
+  
+  <!-- fr -->
+  <define name="e.fr">
+    <a:documentation>French: French text</a:documentation>
+    <element name="fr">
+      <ref name="m.phrase"/>
+    </element>
+  </define>
+
+  <!-- it -->
+  <define name="e.it">
+    <a:documentation>Italian: Italian text</a:documentation>
+    <element name="it">
+      <ref name="m.phrase"/>
+    </element>
+  </define>
+
+  <!-- la -->
+  <define name="e.la">
+    <a:documentation>Latin: Latin text</a:documentation>
+    <element name="la">
+      <ref name="m.phrase"/>
+    </element>
+  </define>
+
+  <!-- oc -->
+  <define name="e.oc">
+    <a:documentation>Occitane: Occitane text</a:documentation>
+    <element name="oc">
+      <ref name="m.phrase"/>
+    </element>
+  </define>
+  
+  <!-- po -->
+  <define name="e.po">
+    <a:documentation>Poitevin: Poitevin dialect text</a:documentation>
+    <element name="po">
+      <ref name="m.phrase"/>
+    </element>
+  </define>
+  
+  <!--                            -->
+  <!--  SEMANTIC ELEMENTS         -->
+  <!--                            -->
+
+  <!-- al -->
+  <define name="e.al">
+    <a:documentation>Animal</a:documentation>
+    <element name="al">
+      <ref name="m.phrase"/>
+    </element>
+  </define>
+
+  <!-- bp -->
+  <define name="e.bp">
+    <a:documentation>Body Part</a:documentation>
+    <element name="bp">
+      <ref name="m.phrase"/>
+    </element>
+  </define>
+
+  <!-- pro -->
+  <define name="e.pro">
+    <a:documentation>Profession</a:documentation>
+    <element name="pro">
+      <ref name="m.phrase"/>
+    </element>
+  </define>
+
+  <!-- ms -->
+  <define name="e.ms">
+    <a:documentation>Measurement</a:documentation>
+    <element name="ms">
+      <ref name="m.phrase"/>
+    </element>
+  </define>
+
+  <!-- env -->
+  <define name="e.env">
+    <a:documentation>Environment: Reference to a physical space or environment, such as workshop space, mountains, forest, etc.</a:documentation>
+    <element name="env">
+      <ref name="m.phrase"/>
+    </element>
+  </define>
+
+  <!-- m -->
+  <define name="e.m">
+    <a:documentation>Material</a:documentation>
+    <element name="m">
+      <ref name="m.phrase"/>
+    </element>
+  </define>
+
+  <!-- pa -->
+  <define name="e.pa">
+    <a:documentation>Plant</a:documentation>
+    <element name="pa">
+      <ref name="m.phrase"/>
+    </element>
+  </define>
+
+  <!-- tmp -->
+  <define name="e.tmp">
+    <a:documentation>Temporal Term: A reference to time, e.g., hour, day, season, holiday, span of time, time of day, etc</a:documentation>
+    <element name="tmp">
+      <ref name="m.phrase"/>
+    </element>
+  </define>
+
+  <!-- tl -->
+  <define name="e.tl">
+    <a:documentation>Tool</a:documentation>
+    <element name="tl">
+      <ref name="m.phrase"/>
+    </element>
+  </define>
+
+  <!-- sn -->
+  <define name="e.sn">
+    <a:documentation>Sense Term: Use of the 5 senses to make qualitative assessment, but generally not visual, e.g., “luisant” </a:documentation>
+    <element name="sn">
+      <ref name="m.phrase"/>
+    </element>
+  </define>
+
+  <!-- pl -->
+  <define name="e.pl">
+    <a:documentation>Place Term</a:documentation>
+    <element name="pl">
+      <ref name="m.phrase"/>
+    </element>
+  </define>
+
+  <!-- pn -->
+  <define name="e.pn">
+    <a:documentation>Personal Name</a:documentation>
+    <element name="pn">
+      <ref name="m.phrase"/>
+    </element>
+  </define>
+
+  <!-- cn -->
+  <define name="e.cn">
+    <a:documentation>Currency Term: Coins and currency (only type of coin, not amount)</a:documentation>
+    <element name="cn">
+      <ref name="m.phrase"/>
+    </element>
+  </define>
+
+  <!-- mu -->
+  <define name="e.mu">
+    <a:documentation>Musical Instrument</a:documentation>
+    <element name="mu">
+      <ref name="m.phrase"/>
+    </element>
+  </define>
+
+  <!-- md -->
+  <define name="e.md">
+    <a:documentation>Medical Term: medical and health-related terms or phrases, such as disease terms, as plague and mange, or medical advice, if possible</a:documentation>
+    <element name="md">
+      <ref name="m.phrase"/>
+    </element>
+  </define>
+  
+  <!-- wp -->
+  <define name="e.wp">
+    <a:documentation>Weapon term: terms related to weapons and weaponry</a:documentation>
+    <element name="wp">
+      <ref name="m.phrase"/>
+    </element>
+  </define>
+
+  <!-- df -->
+  <define name="e.df">
+    <a:documentation>Definition:</a:documentation>
+    <element name="df">
+      <ref name="m.phrase"/>
+    </element>
+  </define>
+
+  <!-- comment -->
+<define name="e.comment">
+  <element name="comment">
+    <attribute name="rid">
+      <data type="string"/>
+    </attribute>
+  </element>
+</define>
+   
+  
+
+  <!-- PHRASE MODEL -->
+
+  <!-- m.phrase -->
+  <define name="m.phrase">
+    <oneOrMore>
+      <choice>
+        <text/>
+        <ref name="e.ab"/>
+        <ref name="e.add"/>
+        <ref name="e.al"/>
+        <ref name="e.bp"/>
+        <ref name="e.cn"/>
+        <ref name="e.del"/>
+        <ref name="e.df"/>
+        <ref name="e.env"/>
+        <ref name="e.figure"/>
+        <ref name="e.mark"/>
+        <ref name="e.fr"/>
+        <ref name="e.it"/>
+        <ref name="e.ill"/>
+        <ref name="e.la"/>
+        <ref name="e.lb"/>
+        <ref name="e.m"/>
+        <ref name="e.ms"/>
+        <ref name="e.pa"/>
+        <ref name="e.pl"/>
+        <ref name="e.pn"/>
+        <ref name="e.pro"/>
+        <ref name="e.sn"/>
+        <ref name="e.sup"/>
+        <ref name="e.tl"/>
+        <ref name="e.tmp"/>
+        <ref name="e.wp"/>
+        <ref name="e.corr"/>
+        <ref name="e.gap"/>
+        <ref name="e.el"/>
+        <ref name="e.md"/>
+        <ref name="e.mu"/>
+        <ref name="e.oc"/>
+        <ref name="e.po"/>
+        <ref name="e.de"/>
+        <ref name="e.es"/>
+        <ref name="e.underline"/>
+        <ref name="e.superscript"/>
+        <ref name="e.exp"/>
+        <ref name="e.comment"/>
+        <ref name="e.hr"/>
+        <ref name="e.emph"/>
+        <ref name="e.ups"/>
+      </choice>
+    </oneOrMore>
+  </define>
+
+</grammar>
