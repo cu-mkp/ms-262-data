@@ -103,6 +103,7 @@
           <text/>
           <ref name="e.ab"/>
           <ref name="e.figure"/>
+          <ref name="e.hfol"/>
           <ref name="m.phrase"/>
         </choice>
       </oneOrMore>
@@ -124,6 +125,43 @@
       </optional>
       <optional>
       <ref name="a.size"/>
+      </optional>
+      <optional>
+        <ref name="a.alt-text"/>
+      </optional>
+      <optional>
+        <ref name="a.link"/>
+      </optional>
+      <oneOrMore>
+        <choice>
+          <ref name="m.phrase"/>
+          <element name="caption">
+            <oneOrMore>
+              <choice>
+                <text/>
+                <ref name="m.phrase"/>
+              </choice>
+            </oneOrMore>
+          </element>
+        </choice>
+      </oneOrMore>
+    </element>
+  </define>
+  <!-- hfol -->
+  <define name="e.hfol">
+    <a:documentation>hfol: the original foliation of the manuscript in Hebrew numerals.</a:documentation>
+    <element name="hfol">
+      <optional>
+        <ref name="a.id"/>
+      </optional>
+      <optional>
+        <ref name="a.margin"/>
+      </optional>
+      <optional>
+        <ref name="a.render"/>
+      </optional>
+      <optional>
+        <ref name="a.size"/>
       </optional>
       <optional>
         <ref name="a.alt-text"/>
@@ -227,6 +265,14 @@
     </element>
   </define>
 
+  <!-- incipit -->
+  
+  <define name="e.incipit">
+    <a:documentation>Incipit: the first few words of an entry, functioning as a heading.  TEI (adapted)</a:documentation>
+    <element name="incipit">
+      <ref name="m.phrase"></ref>
+    </element>
+  </define>
 
   <!-- lb -->
   <define name="e.lb">
@@ -275,6 +321,22 @@
     <a:documentation>ups: text under paper strip</a:documentation>
     <element name="ups">
       <ref name="m.phrase"/>
+    </element>
+  </define>
+  
+  <!-- voc -->
+  <define name="e.voc">
+    <a:documentation>Voc: text with vowels (nikud)</a:documentation>
+    <element name="voc">
+      <ref name="m.phrase"/>
+    </element>
+  </define>
+  
+  <!-- chk -->
+  <define name="e.chk">
+    <a:documentation>Chk: text with a chikchuk/geresh (Hebrew symbol that generally indicates abbreviation or foreign words).</a:documentation>
+    <element name="chk">
+      <ref name="m.phrase"></ref>
     </element>
   </define>
   
@@ -425,66 +487,50 @@
   <!--  LANGUAGE ELEMENTS         -->
   <!--                            -->
   
-  <!-- de -->
-  <define name="e.de">
-    <a:documentation>German: German text</a:documentation>
-    <element name="de">
-      <ref name="m.phrase"/>
-    </element>
-  </define>
-
-  <!-- el -->
-  <define name="e.el">
-    <a:documentation>Greek: Greek text</a:documentation>
-    <element name="el">
+  <!-- owy -->
+  <define name="e.owy">
+    <a:documentation>Old Western Yiddish: Germanic language in Hebrew characters</a:documentation>
+    <element name="owy">
       <ref name="m.phrase"/>
     </element>
   </define>
   
-  <!-- es -->
-  <define name="e.es">
-    <a:documentation>Spanish: Spanish text</a:documentation>
-    <element name="es">
+  <!-- heb -->
+  <define name="e.heb">
+    <a:documentation>Hebrew: Hebrew text</a:documentation>
+    <element name="heb">
       <ref name="m.phrase"/>
     </element>
   </define>
   
-  <!-- fr -->
-  <define name="e.fr">
-    <a:documentation>French: French text</a:documentation>
-    <element name="fr">
-      <ref name="m.phrase"/>
-    </element>
-  </define>
-
-  <!-- it -->
-  <define name="e.it">
-    <a:documentation>Italian: Italian text</a:documentation>
-    <element name="it">
-      <ref name="m.phrase"/>
-    </element>
-  </define>
-
-  <!-- la -->
-  <define name="e.la">
-    <a:documentation>Latin: Latin text</a:documentation>
-    <element name="la">
-      <ref name="m.phrase"/>
-    </element>
-  </define>
-
-  <!-- oc -->
-  <define name="e.oc">
-    <a:documentation>Occitane: Occitane text</a:documentation>
-    <element name="oc">
+  <!-- jit -->
+  <define name="e.jit">
+    <a:documentation>Judeo-Italian: Italian vernacular transcribed in Hebrew characters</a:documentation>
+    <element name="jit">
       <ref name="m.phrase"/>
     </element>
   </define>
   
-  <!-- po -->
-  <define name="e.po">
-    <a:documentation>Poitevin: Poitevin dialect text</a:documentation>
-    <element name="po">
+  <!-- lad -->
+  <define name="e.lad">
+    <a:documentation>Ladino: Spanish text in Hebrew characters</a:documentation>
+    <element name="lad">
+      <ref name="m.phrase"/>
+    </element>
+  </define>
+  
+  <!-- lat -->
+  <define name="e.lat">
+    <a:documentation>Latin: Latin text transcribed in Hebrew characters</a:documentation>
+    <element name="lat">
+      <ref name="m.phrase"/>
+    </element>
+  </define>
+  
+  <!-- laz -->
+  <define name="e.laz">
+    <a:documentation>La'az: Unidentified Romance language transcribed in Hebrew characters</a:documentation>
+    <element name="laz">
       <ref name="m.phrase"/>
     </element>
   </define>
@@ -588,6 +634,30 @@
       <ref name="m.phrase"/>
     </element>
   </define>
+  
+  <!-- mn -->
+  <define name="e.mn">
+    <a:documentation>Magical Name</a:documentation>
+    <element name="mn">
+      <ref name="m.phrase"/>
+    </element>
+  </define>
+
+  <!-- in -->
+  <define name="e.in">
+    <a:documentation>Incantation</a:documentation>
+    <element name="in">
+      <ref name="m.phrase"/>
+    </element>
+  </define>
+  
+  <!-- ps -->
+  <define name="e.ps">
+    <a:documentation>Psalm</a:documentation>
+    <element name="ps">
+      <ref name="m.phrase"/>
+    </element>
+  </define>
 
   <!-- cn -->
   <define name="e.cn">
@@ -656,18 +726,25 @@
         <ref name="e.df"/>
         <ref name="e.env"/>
         <ref name="e.figure"/>
+        <ref name="e.hfol"/>
         <ref name="e.mark"/>
-        <ref name="e.fr"/>
-        <ref name="e.it"/>
+        <ref name="e.heb"/>
+        <ref name="e.jit"/>
         <ref name="e.ill"/>
-        <ref name="e.la"/>
+        <ref name="e.in"/>
+        <ref name="e.lad"/>
+        <ref name="e.lat"/>
+        <ref name="e.laz"/>
+        <ref name="e.owy"/>
         <ref name="e.lb"/>
         <ref name="e.m"/>
+        <ref name="e.mn"/>
         <ref name="e.ms"/>
         <ref name="e.pa"/>
         <ref name="e.pl"/>
         <ref name="e.pn"/>
         <ref name="e.pro"/>
+        <ref name="e.ps"/>
         <ref name="e.sn"/>
         <ref name="e.sup"/>
         <ref name="e.tl"/>
@@ -675,13 +752,9 @@
         <ref name="e.wp"/>
         <ref name="e.corr"/>
         <ref name="e.gap"/>
-        <ref name="e.el"/>
+        <ref name="e.incipit"/>
         <ref name="e.md"/>
         <ref name="e.mu"/>
-        <ref name="e.oc"/>
-        <ref name="e.po"/>
-        <ref name="e.de"/>
-        <ref name="e.es"/>
         <ref name="e.underline"/>
         <ref name="e.superscript"/>
         <ref name="e.exp"/>
@@ -689,6 +762,8 @@
         <ref name="e.hr"/>
         <ref name="e.emph"/>
         <ref name="e.ups"/>
+        <ref name="e.voc"/>
+        <ref name="e.chk"/>
       </choice>
     </oneOrMore>
   </define>
