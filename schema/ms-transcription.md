@@ -70,13 +70,27 @@ e.div =
     a.categories?,
     a.part?,
     e.head?,
-    (text | e.ab | e.figure | m.phrase)+
+    (text | e.ab | e.figure | e.hfol | m.phrase)+
   }
 # figure
 
 ## Figure: a graphical object in the source document
 e.figure =
   element figure {
+    a.id?,
+    a.margin?,
+    a.render?,
+    a.size?,
+    a.alt-text?,
+    a.link?,
+    (m.phrase
+     | element caption { (text | m.phrase)+ })+
+  }
+# hfol
+
+## hfol: the original foliation of the manuscript in Hebrew numerals.
+e.hfol =
+  element hfol {
     a.id?,
     a.margin?,
     a.render?,
@@ -127,6 +141,10 @@ e.gap = element gap { empty }
 
 ## Illegible: unreadable text in the source document
 e.ill = element ill { m.phrase }
+# incipit
+
+## Incipit: the first few words of an entry, functioning as a heading.  TEI (adapted)
+e.incipit = element incipit { m.phrase }
 # lb
 
 ## Line Break: An empty element indicating end of a line of text in the source document
@@ -151,6 +169,14 @@ e.superscript = element superscript { m.phrase }
 
 ## ups: text under paper strip
 e.ups = element ups { m.phrase }
+# voc
+
+## Voc: text with vowels (nikud)
+e.voc = element voc { m.phrase }
+# chk
+
+## Chk: text with a chipchuk/geresh (Hebrew symbol that generally indicates abbreviation or foreign words).
+e.chk = element chk { m.phrase }
 #
 
 # ATTRIBUTES
@@ -223,38 +249,30 @@ a.hand =
 
 #
 
-# de
+# owy
 
-## German: German text
-e.de = element de { m.phrase }
-# el
+## Old Western Yiddish: Germanic language in Hebrew characters
+e.owy = element owy { m.phrase }
+# heb
 
-## Greek: Greek text
-e.el = element el { m.phrase }
-# es
+## Hebrew: Hebrew text
+e.heb = element heb { m.phrase }
+# jit
 
-## Spanish: Spanish text
-e.es = element es { m.phrase }
-# fr
+## Judeo-Italian: Italian vernacular transcribed in Hebrew characters
+e.jit = element jit { m.phrase }
+# lad
 
-## French: French text
-e.fr = element fr { m.phrase }
-# it
+## Ladino: Spanish text in Hebrew characters
+e.lad = element lad { m.phrase }
+# lat
 
-## Italian: Italian text
-e.it = element it { m.phrase }
-# la
+## Latin: Latin text transcribed in Hebrew characters
+e.lat = element lat { m.phrase }
+# laz
 
-## Latin: Latin text
-e.la = element la { m.phrase }
-# oc
-
-## Occitane: Occitane text
-e.oc = element oc { m.phrase }
-# po
-
-## Poitevin: Poitevin dialect text
-e.po = element po { m.phrase }
+## La'az: Unidentified Romance language transcribed in Hebrew characters
+e.laz = element laz { m.phrase }
 #
 
 # SEMANTIC ELEMENTS
@@ -309,6 +327,18 @@ e.pl = element pl { m.phrase }
 
 ## Personal Name
 e.pn = element pn { m.phrase }
+# mn
+
+## Magical Name
+e.mn = element mn { m.phrase }
+# in
+
+## Incantation
+e.in = element in { m.phrase }
+# ps
+
+## Psalm
+e.ps = element ps { m.phrase }
 # cn
 
 ## Currency Term: Coins and currency (only type of coin, not amount)
@@ -348,18 +378,25 @@ m.phrase =
    | e.df
    | e.env
    | e.figure
+   | e.hfol
    | e.mark
-   | e.fr
-   | e.it
+   | e.heb
+   | e.jit
    | e.ill
-   | e.la
+   | e.in
+   | e.lad
+   | e.lat
+   | e.laz
+   | e.owy
    | e.lb
    | e.m
+   | e.mn
    | e.ms
    | e.pa
    | e.pl
    | e.pn
    | e.pro
+   | e.ps
    | e.sn
    | e.sup
    | e.tl
@@ -367,17 +404,15 @@ m.phrase =
    | e.wp
    | e.corr
    | e.gap
-   | e.el
+   | e.incipit
    | e.md
    | e.mu
-   | e.oc
-   | e.po
-   | e.de
-   | e.es
    | e.underline
    | e.superscript
    | e.exp
    | e.comment
    | e.hr
    | e.emph
-   | e.ups)+
+   | e.ups
+   | e.voc
+   | e.chk)+
