@@ -334,7 +334,7 @@
   
   <!-- chk -->
   <define name="e.chk">
-    <a:documentation>Chk: text with a chikchuk/geresh (Hebrew symbol that generally indicates abbreviation or foreign words).</a:documentation>
+    <a:documentation>Chk: text with a chipchuk/geresh (Hebrew symbol that generally indicates abbreviation or foreign words).</a:documentation>
     <element name="chk">
       <ref name="m.phrase"></ref>
     </element>

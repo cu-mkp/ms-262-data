@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root page="010v" image="https://archive.org/download/ldpd_11728201_000/ldpd_11728201_000_images.zip/ldpd_11728201_000_00000022.tif">
+    
+    <div id="p010v_1" categories="art">
+        <ab language="owy">
+            <incipit>To <bp>draw hair</bp> where you want</incipit>: Take <m><jit>turpentine(?)</jit></m>, and <pl><ms>one part</ms> <jit>green lettuce</jit></pl>, and <m><jit>pezza grigia</jit> (gray cloth), <ms>as much as the first</ms></m>, and a <pl><ms>little</ms> (???) wax</pl> <!-- this couldn't be tea, right? the ms is too early.  perhaps wachs isn't an instruction but wax.  I actually do think it's טיא וואקש, simply because the און comes afterwards -->, and boil it not too quickly, that it [????] goes.
+        </ab>
+    </div>
+    
+    <div id="p010v_2" categories="magic">
+        <ab language="owy">
+            <del>A charm</del>
+            <lb/>
+            <lb/>A charm for fire
+            <lb/>
+            <lb/><del><inc>Our Lord God sits high over the land, there he saw</inc></del>
+        </ab>
+    </div>
+    
+    <div id="p010v_3" categories="skin">
+        <ab language="heb">
+            <head><owy>This belongs to <tl>the writing(?)</tl>, <md>when one is wounded</md></owy>.</head>
+            <add>Another thing</add> <md>for wounds/sores, <pl>called in German Schällkraut, in <laz>la'az sera dona</laz>, or <laz>called in la'az in certain places herba meister</laz></pl>, and crush it well, and <tl>squeeze it with <m>a linen cloth</m> into the wound</tl>.</md>  And how good will it be, God-willing.
+        </ab>
+    </div>
+    
+</root>
