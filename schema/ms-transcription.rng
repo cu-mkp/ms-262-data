@@ -27,6 +27,7 @@
             <ref name="e.ab"/>
             <ref name="e.figure"/>
             <ref name="e.mark"/>
+            <ref name="e.hfol"/>
             <ref name="e.div"/>
             <ref name="e.hr"/>
           </choice>
@@ -63,6 +64,9 @@
         <ref name="a.hand"/>
       </optional>
       <ref name="m.phrase"/>
+      <optional>
+        <ref name="a.language"/>
+      </optional>
     </element>
   </define>
 
@@ -200,6 +204,9 @@
     <element name="head">
       <optional>
         <ref name="a.margin"/>
+      </optional>
+      <optional>
+        <ref name="a.language"/>
       </optional>
       <ref name="m.phrase"/>
     </element>
@@ -482,6 +489,20 @@
     </attribute>
   </define>
   
+  <define name="a.language">
+    <a:documentation>Language: The language in which a particular block of text (ab, head, etc.) is written. Valid values are any of the codes established for language elements.</a:documentation>
+    <attribute name="language">
+      <data type="token"/>
+    </attribute>
+  </define>
+  
+  <define name="a.cit">
+    <a:documentation>Cit: Brief citation for when the text draws verbatim from another text, especially scripture.</a:documentation>
+    <attribute name="cit">
+      <data type="string"/>
+    </attribute>
+  </define>
+  
 
   <!--                            -->
   <!--  LANGUAGE ELEMENTS         -->
@@ -648,6 +669,9 @@
     <a:documentation>Incantation</a:documentation>
     <element name="in">
       <ref name="m.phrase"/>
+      <optional>
+        <ref name="a.cit"/>
+      </optional>
     </element>
   </define>
   
@@ -656,6 +680,9 @@
     <a:documentation>Psalm</a:documentation>
     <element name="ps">
       <ref name="m.phrase"/>
+      <optional>
+        <ref name="a.cit"/>
+      </optional>
     </element>
   </define>
 
