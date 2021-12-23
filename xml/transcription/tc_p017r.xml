@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/ms-transcription.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+
+<root page="017r" image="https://archive.org/download/ldpd_11728201_000/ldpd_11728201_000_images.zip/ldpd_11728201_000_00000035.tif">
+
+<hfol/>
+
+<div id="p015v_1" continued="yes" continues="yes" categories="magic">
+<ab language="owy">
+גיב איר <heb>רשות</heb> דש זי און די <pro>אירן <jit>סערוזורי<mark>׳</mark></jit></pro> ווידר 
+<lb/>הוועק גין מיט דיינר גוטי <jit><voc>לִיצֶעֶנציַה</voc></jit> <in><jit>מאדמה
+<lb/><voc>אַנְדִיִ קוֹן רִיעָה קוֹן בוֹנַה לִיצֶעֶנצִיַה אֵ וואויי
+<lb/><pro>עוואושטרי סערודורי</pro> אַן דִיִ <del>קונט</del> קוֹנִדִיִאוֹ
+<lb/>טוטי קְװַנטֵי <del>עי</del> עֵ פֶע</voc> <owy>אונ<mark>׳</mark></owy> <voc>רוֹבְרֶע נצַיא
+<lb/>אֶל מַיישטרוֹ עֶמִי קוונדו אל מיישטרו קְײַמֵי
+<lb/>די װָאלִיטֵי טוֹרְנַדִיִ װָאלַנטִירוֹ אֶינַנצוֹ דְמִי</voc></jit></in>
+<lb/>אונ<mark>׳</mark> זו גיט זי הין וועק.  ווען עש זי דען 
+<lb/><sn>נומי זיכט</sn> <sn>זו זול עש דש ליכט אוייז לעשן
+<lb/>און זול די <env>ויענשטר</env> אל אוייף טון</sn> און זול 
+<lb/>זי ניט ויל ורוגן אוייף איין מול אנדרש
+<lb/>זי <del>ו</del> זאגט ניט ואז גלאייך צו געט 
+</ab>
+    
+
+</div>
+    
+<div id="p017r_1" categories="magic">
+<ab language="owy">
+און מאג אך וואול ורוגן אוב איינר טוט
+<lb/>אודר לעבדיג איז. איז ער לעבדיג זו אך
+<lb/>אין קומן אז ער איצונט שטעט און געט 
+<lb/>איז ער טוט זו קומט ער <md>מיט איינם 
+<lb/>ברענטליין אוייף זאיינם <bp>קאוף</bp></md>        
+</ab>
+</div>
+
+</root>

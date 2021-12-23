@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/ms-transcription.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+
+<root page="017v" image="https://archive.org/download/ldpd_11728201_000/ldpd_11728201_000_images.zip/ldpd_11728201_000_00000036.tif">
+
+<hfol>שיג</hfol>
+
+<div id="p017v_1" categories="wound" continues="yes">
+    <head language="owy">
+        <md>איין בראנט זאלב</md>
+    </head>
+    <ab language="owy">
+    </ab>
+</div>
+
+</root>

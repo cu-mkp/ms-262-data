@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/ms-transcription.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+
+<root page="016v" image="https://archive.org/download/ldpd_11728201_000/ldpd_11728201_000_images.zip/ldpd_11728201_000_00000034.tif">
+
+<hfol>שיג</hfol>
+
+<div id="p015v_1" continued="yes" continues="yes" categories="magic">
+<ab language="owy">
+<bp>ברעכט די <heb>גניבה</heb> אין זאיינר האנט</bp>. <heb>ווען דער 
+<lb/><heb>גאנב <corr>גנב</corr></heb> נון קומט</heb> <sn>זו זול <pro>דאז קינט</pro> זעהן עבן
+<lb/>אן אוב עש <pro>דען <heb>גאנב <corr>גנב</corr></heb></pro> קענט</sn>. קענט עש דען 
+<lb/><pro><heb>גנב</heb></pro> זו מאגשטו עש ורוגן זו זאגט עש דירש
+<lb/>דיר עש קענט עש <pro>דען <heb>גאנב <corr>גנב</corr></heb></pro> דען ניט זו 
+<lb/>מך זי בשווערן דש זי ברענג <tl><tl>ענגשט און 
+<lb/>פען און פאפיר און דש זי דיר שרייב גויט
+<lb/><heb>כתיבה</heb> און בשאיידליך <jit><voc>לֵעֵטְרִש<mark>׳</mark></voc></jit></tl> ווער דער 
+<lb/><pro><heb>גאנב <corr>גנב</corr></heb></pro> איז</tl> און <pro>זאיין ואטר האיישט</pro> און 
+<lb/>לוש זי <pro>דש קינט</pro> ורוגן <pro>אוב ער <heb>כהן</heb> אודר 
+<lb/><heb>לוי</heb> אודר <heb>ישראל</heb> איז</pro> אודר אוב ער איין 
+<lb/>גוי איז זו זיכט מן וואל אוב זי דען 
+<lb/><jit>קאפפא<mark>׳</mark></jit> <del>שונ ש</del> שוטילט אודר אוב זי יא 
+<lb/>טויט <tl>ווילטו זו מך דיר פֻונְטלן ווש <del>הי</del> זי 
+<lb/>גשריבן הוט</tl> און ווען <pro>דער <heb>גנב</heb> אודר 
+<lb/><heb>גנבת<mark>׳</mark></heb> קומן אישט</pro> זו לוש זי ורוגן אישט
+<lb/>דש <sn>דער <pro><heb>גנב</heb></pro> זו זיך <pro>דש קינט</pro> אוייף
+<lb/>זעהן</sn> ווי זי דען טויט יא אודר נאיין
+<lb/>ווען דו נון איין גנוגן גורוגט הושט זו
+</ab>
+</div>
+
+</root>

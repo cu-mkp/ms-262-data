@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/ms-transcription.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+
+<root page="017r" image="https://archive.org/download/ldpd_11728201_000/ldpd_11728201_000_images.zip/ldpd_11728201_000_00000035.tif">
+    
+    <div id="p015v_1" continued="yes" continues="yes" categories="magic">
+        <ab language="owy">
+            give her <heb>authority</heb>, that she and <pro>her <jit>servants</jit></pro> may go away with good <jit>licentia</jit>: <in><jit>Madame, go with royalty, with good licentia and you and <pro>your servants</pro> with God (can't make out the rest)</jit></in>, and so she goes away. When it (the child?) <sn>sees the name</sn>, <sn>so must it let the light in, and must open the <env>window</env></sn>. And one must not ask her too much at once, otherwise she does not say what is true(???).
+        </ab>
+    </div>
+
+<div id="p017r_1" categories="magic">
+    <ab language="owy">
+        And one may also ask whether one is dead or alive. If he is alive, so will he stand healthy(???). If he is dead, he comes with a <md>burn on his <bp>head</bp></md>.
+    </ab>
+</div>
+
+</root>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/ms-transcription.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+
+<root page="016r" image="https://archive.org/download/ldpd_11728201_000/ldpd_11728201_000_images.zip/ldpd_11728201_000_00000033.tif">
+    
+    <div id="p015v_1" continued="yes" continues="yes" categories="magic">
+        <ab language="owy">
+            on it.  The boy or maiden see all of this, and tell you everything, how the woman is clothed, and how the stool you sat her on is. Now, but when she has sat down, one conjures/calls her: First, that she will send for a <tl><heb>Pentateuch</heb></tl> and must swear on the <heb>Ten Commandments</heb> that she will write the whole truth [about] what you ask, and the <heb>incantation</heb> adds also, as I have already written, that he says she must ask for another <tl><heb>Pentateuch</heb></tl>, and must swear on it that she will write the truth. Ask <pro>the child</pro> everything about what it sees that she does, when it says that <bp>she put her hand on the <tl><heb>Pentateuch</heb></tl></bp>, that she swears first that she makes the <pro><heb>thief or thief (f.)</heb></pro> <heb>immediately</heb> come here before <pro>the child</pro>, and that he bring all the <heb>stolen goods</heb> here, holding all that he must, you will know he did the <heb>theft</heb>, and 
+        </ab>
+    </div>
+    
+</root>

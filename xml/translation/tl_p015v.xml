@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/ms-transcription.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+
+<root page="015v" image="https://archive.org/download/ldpd_11728201_000/ldpd_11728201_000_images.zip/ldpd_11728201_000_00000032.tif">
+    
+    <div id="p015v_1" continued="yes" continues="yes" categories="magic">
+        <ab language="owy">
+            that she does not want to come. But, if she comes and he sees her, <in>so should he answer her: "<jit>Madame, be welcome</jit>"</in>. After that he must call/conjure her (?), so that <pro>she must send two of her servants so that <tl>they must bring her a stool that she would like to sit upon</tl>, and he must call/conjure her like so</pro>: <in><jit>"Madame, I conjure [you] <mn>on the part of God and on the part of all the names of God</mn>, and by <mn>Alpha Adah, who is the refined(?) prince of all that is good(?), who (???) command through you, of your servants, to carry passage</mn>(?), <owy>and</owy> (???) conjures <mn>on the part of God</mn> and <mn>on the part of all the names of God</mn> and <mn>Alpha Adah who is the refined(?) prince of all that is good(?)</mn>".</jit> that is the <heb>incantation</heb>.</in> Then, she sends <pro>one of her two that come with her</pro> to come back to her and <tl>bring her a stool</tl>. So she sits
+        </ab>
+    </div>
+    
+</root>

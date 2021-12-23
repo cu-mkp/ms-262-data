@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/ms-transcription.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+
+<root page="015v" image="https://archive.org/download/ldpd_11728201_000/ldpd_11728201_000_images.zip/ldpd_11728201_000_00000032.tif">
+
+<hfol>שיב</hfol>
+
+<div id="p015v_1" continued="yes" continues="yes" categories="magic">
+    <ab language="owy">
+דאז זי ניט וויל קומן קומט זי אבר און דאז זי 
+<lb/>דער יונג זיך <in>זו זול ער זי אנטפנגן אזו <jit><voc>מַדַמַה<mark>׳</mark>
+<lb/>שִיעַ<mark>׳</mark> בֶעֶן<mark>׳</mark> װִינְיוֹטַה<mark>׳</mark></voc></jit></in> דר נוך זול ער די בראה
+<lb/>לושן בשווערן דען יונגן <pro>דש זי זול זענדן
+<lb/>נוך צווין איר דינרן דש זי איר <tl>זולן ברענגן
+<lb/>איין שטול דש זי מאג דראוייף זיצן</tl></pro>
+<lb/>און אזו זול ער זי בשווערן <in><jit><voc>מַאַדַמַה</voc>
+<lb/>איוואוי קונזירדו פר פרטי דדיאו <voc>עֵעִ</voc> <mn>פר פרטי 
+<lb/><del>דטוטו</del> דטוטי נומי <voc>דְדִיעֵ עֵעִ</voc></mn> <mn>פר <voc>אַלְפַה 
+<lb/>אַדַה <del>ז</del> קִי פְרִינציפיו</voc> אפינו <voc>דְטוטֵי קְװֶעלוֹ
+<lb/>קִי װָאליַטַי(?) מַנְדַרֵי</voc> פר <voc>דוֹ</voc> דיוואושטר סערודורי
+<lb/></mn><voc><mn>עֵ פַזֵעֵטַ? פוֹרַטַרֵי </mn><owy>און</owy> סַדִירֵי קִי סֵעֶנְטִיװַאשוי
+<lb/>לַשוֹזַה קְשִי אִי װִאוִי קוִנֻזוּרֵו <mn>פַר פַרְטָה דִדֵאיוֹ</mn>
+<lb/><mn>עֵעֵ פַר פַרְטַה דִטוּטֵי נוֹמֵי דִדִיאוֹ</mn> אֶ <mn>פַר
+<lb/>אַלְפַה אַדַה קי פַרִנְצִיפְיוֹ</mn></voc><mn> אפינו דטוטי <voc>קְװֶעלוֹ</voc></mn></jit>
+<lb/>דש אישט די <heb>השבעה</heb></in> <mark>/</mark> דען שיקט זי <pro>איינן
+<lb/>בון דען צווינן די מיט איר קומן</pro> הין וועקן 
+<lb/>און דער <tl>ברענגט איר איין שטול</tl> זו זיצט
+    </ab>
+</div>
+
+</root>

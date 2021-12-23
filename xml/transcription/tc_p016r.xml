@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/ms-transcription.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+
+<root page="016r" image="https://archive.org/download/ldpd_11728201_000/ldpd_11728201_000_images.zip/ldpd_11728201_000_00000033.tif">
+
+<hfol/>
+
+<div id="p015v_1" continued="yes" continues="yes" categories="magic">
+<ab language="owy">
+זי אוייף דש זיכט אלש דער יונג אודר דש מאיידלן
+<lb/>און זגט דיר אל דינג וויא די ורוויא גקלייט אישט
+<lb/>און ווי דער שטול דו זי אוייף זיצט גשטאלט אישט
+<lb/>ווען זי זיך נון גזעצט הוט בשווערט מן זי אבר 
+<lb/>איינש דש זי זול שיקן נוך איינם <tl><heb>חמוש <corr>חומש</corr></heb></tl> אונ<mark>׳</mark>     
+<lb/>זול שווערן אוייף <heb>עשרת הדברות</heb> דש זי וויל
+<lb/>שרייבן די גאנץ ווארהאייט ואז מן זי דו ורוגט
+<lb/>און די <heb>השבעה</heb> גיט גלאייך צו אז איך דיר ואור
+<lb/>גשריבן האב וידר דש ער זאגט זי זול נוך
+<lb/>איינם <tl><heb>חמוש <corr>חומש</corr></heb></tl> שיקן און זול דראוייף שווערן
+<lb/>צו שרייבן די וואור האייט ברוג <pro>דאז קינט</pro>
+<lb/>אל וועגן ווש עש זיך דש זי טויט ווען עש 
+<lb/>שפריכט <bp>דש זי די הנט אוייף דש <tl><heb>חמוש <corr>חומש</corr></heb></tl> לעט</bp>
+<lb/>זי זול מן זי דער אבר איינש בשווערן דש זי דען 
+<lb/><pro><heb>גנב אודר גנבת<mark>׳</mark></heb></pro> מך קומן <heb>תכף</heb> אלהער בור 
+<lb/>דש קינט אונ<mark>׳</mark> דש ער די <heb>גניבה</heb> גאנץ ברענג
+<lb/>אל הער אין אל דעם גבערז און אין אלר מושן
+<lb/>אז ער ואייש דו ער די <heb>גניבה</heb> טעט און
+</ab>
+</div>
+
+</root>
