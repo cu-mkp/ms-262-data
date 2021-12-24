@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/ms-transcription.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+
+<root page="019v" image="https://archive.org/download/ldpd_11728201_000/ldpd_11728201_000_images.zip/ldpd_11728201_000_00000040.tif">
+    
+    <div id="p019v_1" categories="magic">
+        <ab language="owy">
+Take <al>a black cat, a <heb>male</heb>, and it should be <md>dead</md></al>, and (???) and <env>bury it in the ground on the rocks</env> and the <bp>stomach full of <m>earth</m>(?)</bp> and put in it (???) and let it lie in the ground [...] <tl>in a mirror</tl> [...] <sn>you see your <heb>figure</heb> in <tl>the mirror</tl></sn> [...] <sn>if you cannot see your <heb>figure</heb> <tl>in the mirror</tl> well</sn> [...]
+            
+        </ab>
+    </div>
+    
+</root>

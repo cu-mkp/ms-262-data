@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/ms-transcription.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+
+<root page="021r" image="https://archive.org/download/ldpd_11728201_000/ldpd_11728201_000_images.zip/ldpd_11728201_000_00000043.tif">
+    
+    <div id="p020v_1" categories="wound" continued="yes" continues="yes">
+        <ab language="owy">
+        </ab>
+    </div>
+    
+</root>

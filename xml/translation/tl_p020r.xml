@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/ms-transcription.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+
+<root page="020r" image="https://archive.org/download/ldpd_11728201_000/ldpd_11728201_000_images.zip/ldpd_11728201_000_00000041.tif">
+    
+    <div id="p020r_1" categories="muscle">
+        <ab language="owy">
+            <incipit>For <md>spasms</md></incipit>:
+            [...]
+            <heb><pn>From the mouth of Lady Hannah, long may she live</pn></heb>
+        </ab>
+    </div>
+    
+    <div id="p020r_2" categories="wound" continues="yes">
+        <ab language="owy">
+            <incipit>For a <md><al>snake bite(?)</al></md></incipit>
+        </ab>
+    </div>
+    
+</root>

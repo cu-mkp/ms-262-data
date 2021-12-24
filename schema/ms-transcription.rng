@@ -556,6 +556,14 @@
     </element>
   </define>
   
+  <!-- arm -->
+  <define name="e.arm">
+    <a:documentation>Aramaic: the language of late antique and early medieval Jews in Palestine and Babylonia. The language of the Talmud and several Jewish magico-medical compendia.</a:documentation>
+    <element name="arm">
+      <ref name="m.phrase"/>
+    </element>
+  </define>
+  
   <!--                            -->
   <!--  SEMANTIC ELEMENTS         -->
   <!--                            -->
@@ -747,6 +755,7 @@
         <ref name="e.ab"/>
         <ref name="e.add"/>
         <ref name="e.al"/>
+        <ref name="e.arm"/>
         <ref name="e.bp"/>
         <ref name="e.cn"/>
         <ref name="e.del"/>

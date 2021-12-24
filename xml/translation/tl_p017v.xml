@@ -3,7 +3,7 @@
 
 <root page="017v" image="https://archive.org/download/ldpd_11728201_000/ldpd_11728201_000_images.zip/ldpd_11728201_000_00000036.tif">
     
-    <div id="p017v_1" categories="wound">
+    <div id="p017v_1" categories="wound" continues="yes">
         <head language="owy">
             <md>A burn salve:</md>
         </head>

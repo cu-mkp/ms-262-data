@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/ms-transcription.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+
+<root page="021v" image="https://archive.org/download/ldpd_11728201_000/ldpd_11728201_000_images.zip/ldpd_11728201_000_00000044.tif">
+
+<hfol>שיז</hfol>
+
+
+<div id="p020v_1" categories="wound" continued="yes">
+        <ab language="owy">
+        </ab>
+</div>
+        
+<div id="p021v_1" categories="">
+        <ab language="owy">
+<incipit>בור די <del>שידולי</del> <jit>שיליא</jit> צו מאכן אב גען</incipit> <pl>איינר לאיי <heb>זומן</heb>
+<lb/>האייש אין ועלשן <jit><voc>דֶענִטִיִ קַװַלִין</voc></jit></pl> <pl>דען זעלויגן
+<lb/><heb>זומן</heb> ברען איינר <heb>אשה</heb> בור</pl> און <md><bp>לוש אור 
+<lb/>דען <m>ראך</m> גען אין אורן מונט און אין די נאז</bp>
+<lb/>אין <bp>לוש איר דען <m>ראך</m> <del>רי</del> וואול אין אירן
+<lb/>לאייב גען</bp> זו זול זי די <bp><jit>שיליא</jit></bp> גווינן <tmp><heb>תכף</heb></tmp></md>
+<lb/>בעז<mark>׳</mark> ה<mark>׳</mark> ית<mark>׳</mark> מפי <pn>ר<mark>׳</mark> </pn><pn><pn>משה <pl>קשטילין</pl></pn> ומשם
+<lb/><pro>אמו</pro> אמר לי</pn>                
+        </ab>
+</div>
+        
+<div id="p021v_2" categories="wound; parasite" continues="yes">
+        <ab language="owy">
+                <incipit><corr>דע</corr> דער <md><al>איין וואורם</al> <bp>אין איין וינגר </bp>האוט</md></incipit>
+        </ab>
+</div>        
+        
+</root>

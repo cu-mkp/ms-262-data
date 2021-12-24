@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/ms-transcription.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+
+<root page="019r" image="https://archive.org/download/ldpd_11728201_000/ldpd_11728201_000_images.zip/ldpd_11728201_000_00000039.tif">
+
+<hfol></hfol>
+
+
+    <div id="p018v_1" categories="breasts" continued="yes">
+        <ab language="owy">
+        </ab>
+    </div>
+    
+    <div id="p019r_1" categories="urine">
+        <ab language="owy">
+<incipit><md>איינש<del>ט</del> דש ניט קאן <heb>משטין <corr>משתין</corr></heb> זאיין עש ווערט
+<lb/>אים דען גר זאוייאר</md></incipit>
+        </ab>
+    </div>
+    
+    
+</root>

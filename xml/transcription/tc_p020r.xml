@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/ms-transcription.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+
+<root page="020r" image="https://archive.org/download/ldpd_11728201_000/ldpd_11728201_000_images.zip/ldpd_11728201_000_00000041.tif">
+
+<hfol></hfol>
+    
+<div id="p020r_1" categories="muscle">
+        <ab language="owy">
+<incipit>בור דעם <md>שפאזן</md></incipit>
+[...]
+<heb><pn>מפי מרת חנה שתהיה</pn></heb>
+        </ab>
+</div>
+
+<div id="p020r_2" categories="wound" continues="yes">
+        <ab language="owy">
+<incipit>איינר <md><al>לאיי שנעקן</al></md></incipit>
+        </ab>
+</div>
+        
+        
+        
+</root>

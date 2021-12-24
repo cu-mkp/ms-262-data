@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/ms-transcription.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+
+<root page="021v" image="https://archive.org/download/ldpd_11728201_000/ldpd_11728201_000_images.zip/ldpd_11728201_000_00000044.tif">
+    
+    <div id="p020v_1" categories="wound" continued="yes">
+        <ab language="owy">
+        </ab>
+    </div>
+    
+    <div id="p021v_1" categories="pregnancy">
+        <ab language="owy">
+            <incipit>To make <bp><jit>placenta</jit></bp> go off</incipit>: Take <pl>a seed that is called in the vernacular <jit>"dente cavallin"</jit></pl>, and <pl>burn the same <heb>seed</heb> before the <heb>woman</heb></pl>, and <md><bp>let the <m>smoke</m> go into her mouth and into her nose</bp>, and <bp>let the <m>smoke</m> go fully into her body</bp>, so she must let out the <bp><jit>placenta</jit></bp> <tmp><heb>immediately</heb></tmp></md>, God-willing. <pn><pn>From the mouth of Rabbi Moshe <pl>Castillian</pl></pn>, and in the name of his <pro>mother</pro> he said it to me</pn>.
+        </ab>
+    </div>
+    
+    <div id="p021v_1" categories="wound; parasite" continues="yes">
+        <ab language="owy">
+            <incipit>One who has <md><al>a worm</al> <bp>in a finger</bp></md></incipit>:
+        </ab>
+    </div>
+    
+</root>

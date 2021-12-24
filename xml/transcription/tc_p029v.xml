@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/ms-transcription.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+
+<root page="029v" image="https://archive.org/download/ldpd_11728201_000/ldpd_11728201_000_images.zip/ldpd_11728201_000_00000060.tif">
+
+<hfol>שכד</hfol>
+
+<div id="p029v_1" categories="magic">
+    <ab language="heb">
+<incipit>להתיר <pro>תפוש</pro> <pro>מקבלת גר אחד</pro></incipit> יקח <m>קמח מ<pro>ב<mark>׳</mark> נשים
+<lb/>שיושבין <corr>שיושבות</corr> תחד <corr>תחת</corr> בעליהן הראשונים</pro></m> <m>וחלב 
+<lb/><pro>מאשה ומבתה</pro></m> <tl>ועשה עוגה <m>מקמח זה 
+<lb/>ומהחלב הזה</m> ושלח עוגה זו <pro>לתפוש</pro> ויאכל
+<lb/>העוגה ויאמר <pro>למי שאצלו</pro> שיאכל עמו ואם
+<lb/>לא ירצה לאכול עמו בזה אין לחוש</tl> <tmp>וכל
+<lb/>שעה שהוא אוכל יאמר השמות האילו</tmp>
+<lb/><in><mn><lat><voc>קְרִישְׁטוּשׁ עַקְטוּשׁ שְׁפִירְײָמַן אַלוֹרַם
+<lb/>אֵיבַנְט רִירְײַצְעַרנְא פִיקְטוּשׁ אַקְשמוֹרְטוּש</voc></lat></mn></in>
+<lb/>וברור שבקרוב יצא לחופש ואל יעשה זאת 
+<lb/>אם אין לו צריך יותר ויותר כי <mn>שם טומאה 
+<lb/>הוא זה</mn>  
+    </ab>
+</div>
+       
+
+</root>

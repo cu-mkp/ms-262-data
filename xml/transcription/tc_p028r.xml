@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/ms-transcription.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+
+<root page="028r" image="https://archive.org/download/ldpd_11728201_000/ldpd_11728201_000_images.zip/ldpd_11728201_000_00000057.tif">
+
+<hfol/>
+
+<div id="p028r_1" categories="">
+    <ab language="heb">
+<incipit><md>למי שאינו וכול להשתין זה בא <bp>מן הכליות</bp></md></incipit> יקח <pl>עלה 
+<lb/>צנונות</pl> ויחתכם ויכתשם <md>ויוצא <md>מהן המרק
+<lb/>וישתה אותו המרק</md> <env>במרחץ חם</env> ויתיר השתן</md>  
+    </ab>
+</div>
+
+<div id="p028r_2" categories="">
+    <ab language="heb">
+<incipit>דא<mark>׳</mark> <exp>דבר אחר</exp></incipit> ימשח <bp>הגיד</bp> <m>בשומן של שפן שקו<mark>׳</mark><exp>רה</exp> קוניגלן בלא<mark>׳</mark></m>
+<lb/>ויתיר השתן <mark>//</mark> דא<mark>׳</mark><exp>דבר אחר</exp> <m>קח כסף חי</m> ויערב
+<lb/><m>ביין חם</m> <md>וישתה וישתין מיד</md> בעהי<mark>׳</mark>       
+    </ab>
+</div>
+<div id="p028r_3" categories="">
+    <ab language="owy">
+<incipit>ווילטו דש איין אשה ניט זול ווערדן טראגן</incipit> <heb>תלה
+<lb/><bp>בצוארה</bp> <md>צואת <al>ארנבת</al></md> <tmp>כל זמן <md>שהצואה
+<lb/><del>ב</del> תלוי <bp>בצוארה</bp></md></tmp></heb>       
+    </ab>        
+</div>
+
+<div id="p028r_4" categories="">
+    <ab language="heb">
+<lb/><incipit><bp><owy>בור די בער מוטר</owy> לאיש</bp></incipit> קח <m>צואת<mark>׳</mark> <al>חמור</al></m> בתוך
+<lb/><tl>סמרטוט <m>פשתן</m></tl> <owy>און</owy> <tl>בשק קטן</tl> <m>ובשל אותו
+<lb/>עם יין לבן לה <corr>לא</corr> חזק והמובחר שבנמצא עד
+<lb/><del>שיהיה</del> <sn>שיהא חם וכאשר יוכל לסבול</sn> תניח</m>
+<md><lb/>ותשים <tl>השקיט</tl> אן <tl>הסמרטוט</tl> שבו <m>הצואה</m>
+<lb/>על הכאב וינוח וישקוט ויתרפא</md> בעה<mark>׳</mark> <exp>בעזרת השם</exp>
+<lb/>קבלת <pn>מר מטות מן</pn> שראה אותו <pro>מרופא</pro>
+<lb/>אחד <pl>בפיראן</pl>       
+    </ab>        
+</div>
+    
+<div id="p028r_5" categories="">
+    <ab language="owy">
+<incipit>דא<mark>׳</mark> <exp>דבר אחר</exp></incipit> נים איין <m>ויישטר דעקיל</m> און ווערם אים האייש און 
+<lb/>טוא אין אין איין שמאלץ שורצטוך ליג אין 
+<lb/>אוייף די װֵיטַג אז ווארם ער לאיידן קאן זא 
+<lb/>ער זו ווערט ער אנטישלופן און ניכט
+<lb/>ווער אנתפינדן בעזהי<mark>׳</mark>            
+    </ab>        
+</div>    
+
+</root>

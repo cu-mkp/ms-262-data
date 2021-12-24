@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/ms-transcription.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+
+<root page="028r" image="https://archive.org/download/ldpd_11728201_000/ldpd_11728201_000_images.zip/ldpd_11728201_000_00000057.tif">
+    
+    <div id="p028r_1" categories="urine">
+        <ab language="heb">
+            <incipit><md>For one who cannot urinate, that comes from <bp>the kidneys</bp></md></incipit>: Take <pl>cold leaf(???)</pl> and crush it(?) and <md><m>take out the juice and drink the juice</m> <env>in a hot bath</env>, and the urine will come forth</md>.
+        </ab>
+    </div>
+    
+    <div id="p028r_2" categories="urine">
+        <ab language="heb">
+            <incipit>Another thing</incipit>: Rub <bp>the penis</bp> in <m>rabbit fat that is <owy>called in German "Königlin" (little king/prince)</owy></m>, and the urine will come forth.  <incipit>Another thing</incipit>: Take <m>living silver(?)</m> and <m>mix it with hot wine</m>, and drink it and <md>the urine will come(???)</md> with God's help.
+        </ab>
+    </div>
+    
+    <div id="p028r_3" categories="pregnancy">
+        <ab language="owy">
+            <incipit>If you want a woman not to become pregnant</incipit>: <heb>Hang <bp>on her neck</bp> <m>the feces of a <al>rabbit</al></m></heb>.  <tmp>As long as <m>the feces is on <bp>her neck</bp></m></tmp>.
+        </ab>        
+    </div>
+    
+    <div id="p028r_4" categories="pain">
+        <ab language="heb">
+           <incipit><bp><owy>For the uterus</owy> of a man (Zucker says, prostatic utricle)</bp></incipit>: Take the <m>feces of a <al>donkey</al></m> in a <tl><m>linen</m> cloth</tl>, <owy>and</owy> in a <tl>small bag</tl>, and <m>boil it with white wine, not strong, and the best quality that can be found, until it is <sn>as hot as you can stand</sn></m>, and <md>put <tl>the bag</tl> (with?) <tl>the cloth</tl> <m>and feces</m> in it on the the spot that hurts, and it will calm, and quiet, and be healed</md>, with God's help. Received from <pn>Rabbi Matosman</pn>, who saw it [done?] by <pro>a certain doctor</pro> <pl>in Piran</pl>.
+        </ab>        
+    </div>
+    
+    <div id="p028r_5" categories="pain">
+        <ab language="owy">
+            <incipit>Another thing</incipit>: Take a (???) lid and heat it up and put it in (????)
+        </ab>        
+    </div>    
+    
+</root>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/ms-transcription.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+
+<root page="024v" image="https://archive.org/download/ldpd_11728201_000/ldpd_11728201_000_images.zip/ldpd_11728201_000_00000050.tif">
+
+<hfol>שכ</hfol>
+
+<div id="p024v_1" categories="magic">
+    <ab language="owy">
+<incipit><md>דער עצוואז הוט אים <bp>האלז<mark>׳</mark></bp> דש אים וויא טוט אז 
+<lb/>איין <m>גרעט</m>, <m>אודר איין באיין</m> <bp>גשלונדן הוט</bp> 
+<lb/>אודר ואז עז איז דאז אים אין דעם <bp>האלז</bp> 
+<lb/>שטעק</md></incipit> זו זול ער נעמן דאז זעלוויגן <m>לאיי</m> 
+<lb/>איז <mark>/</mark> <m>איז עש איין גרעט זו זול ער <del>נעמן</del> נעמן
+<lb/>איין גרעט</m> <m>איז עז איין באיין זו זול ער 
+<lb/>נעמן איין באיין</m>, און זול עש ליגן <bp>אובן
+<lb/>אוייף זאיים קאוף אוייף דען ווירביל</bp> 
+<lb/><bp>דעם דען וויא אים האלז איז</bp> און זול 
+<lb/>אים אין דש אור לאויישטרן דען שורם
+<lb/>ג<mark>׳</mark> <heb>פעמים</heb> בור זיך און ג <heb>פעמים</heb> הינטר זיך
+<lb/><in cit="BT Shabbat 67a"><arm><voc>חַד חַד בְלַע בְלַע נְחַת חַד חַד
+<lb/>חַד חַד בְלַע בְלַע נְחַת חַד חַד 
+<lb/>חַד חַד בְלַע בְלַע נְחַת חַד חַד</voc></arm></in>
+<lb/>ג <heb>פעמים</heb> הינטר זיך 
+
+<lb/><in cit="BT Shabbat 67a"><arm><voc>חַד חַד נְחת בְלַע בְלַע חַד חַד 
+<lb/>חַד חַד נְחת בְלַע בְלַע חַד חַד 
+<lb/>חַד חַד נְחת בְלַע בְלַע חַד חַד</voc></arm></in>
+ 
+    </ab>
+</div>
+
+
+</root>

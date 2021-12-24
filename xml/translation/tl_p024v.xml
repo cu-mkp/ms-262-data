@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/ms-transcription.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+
+<root page="024v" image="https://archive.org/download/ldpd_11728201_000/ldpd_11728201_000_images.zip/ldpd_11728201_000_00000050.tif">
+    
+    <div id="p024v_1" categories="magic; choking">
+        <ab language="owy">
+            <incipit><md>One who has something in his <bp>throat</bp> that causes him pain, like a <m>fishbone</m>, or a bone <bp>stuck in the throat</bp>, or whatever it is that is stuck in the <bp>throat</bp></md></incipit>: so must he take the same <m>thing(?)</m>: <m>if it is a fishbone, he must take a fishbone</m>; <m>if it is a bone, he must take a bone</m>. And he must lay it <bp>on his head on the very top(?)</bp>, <bp>where the throat is(???)</bp>, and he must say the charm three <heb>times</heb> before him and three <heb>times</heb> behind him:
+<lb/>
+<in cit="BT Shabbat 67a">"<arm>One by one swallow, swallow, go down, one by one. One by one swallow, swallow, go down, one by one. One by one swallow, swallow, go down, one by one</arm>."</in>
+<lb/>
+And three <heb>times</heb> behind him: <in cit="BT Shabbat 67a">"<arm>One by one, go down, swallow, swallow, one by one. One by one, go down, swallow, swallow, one by one. One by one, go down, swallow, swallow, one by one</arm>."</in>
+        </ab>
+    </div>
+    
+</root>

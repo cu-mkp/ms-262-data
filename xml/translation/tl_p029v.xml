@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/ms-transcription.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+
+<root page="029v" image="https://archive.org/download/ldpd_11728201_000/ldpd_11728201_000_images.zip/ldpd_11728201_000_00000060.tif">
+    
+    <div id="p029v_1" categories="magic">
+        <ab language="heb">
+            <incipit>To free a <pro>prisoner</pro> (<pro>obtained from a convert</pro>)</incipit>: Take <m>flour from <pro>two women who live with (lit. under) their first husbands</pro></m> and <m>milk from <pro>a woman and her daughter</pro></m>. <tl>And make a cake <m>from the milk and the flour</m> and send the cake <pro>to the prisoner</pro>, and he will eat the cake, and will say to he <pro>who is with him</pro> that he may eat with him, and if he does not want to, it is no problem</tl>. And <tmp>every hour that he eats, he should say these names</tmp>: <in><mn><lat>Christus actus (???) ibant (???) fictusex mortus</lat></mn></in>. And it is clear that he will soon be released. And one should not use this if he is not in extreme need, for <mn>this is a profane name</mn>.
+        </ab>
+    </div>
+    
+</root>
